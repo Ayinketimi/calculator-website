@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eniola calculator website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="calculator(event)" class="display">
+            <input type="number" placeholder="Enter Number 1" id="input1">
+
+            <select name="operator" id="operator"> 
+            <option value="add">+</option>
+            <option value="substract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+            </select>
+
+            <input type="number" placeholder="Enter Number 2" id="input2">
+            <div>
+            <span id="result">Result : </span>
+            </div>
+
+            <div>
+            <button type="submit" onclick="calculator()" class="cal">CALCULATE</button>
+            </div>
+        </form>
+    </div>
+    <script src="/index.js"></script
+</body>
+</html>
